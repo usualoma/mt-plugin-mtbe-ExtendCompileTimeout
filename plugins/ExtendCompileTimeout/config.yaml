@@ -1,0 +1,8 @@
+id: ExtendCompileTimeout
+name: ExtendCompileTimeout
+version: 0.0.1
+author_name: "Taku Amano <taku@taaas.jp>"
+
+editors:
+  block_editor:
+    extension: extension.tmpl

@@ -1,0 +1,11 @@
+<mt:setvarblock name="js_include" append="1">
+<script type="module">
+const originalApply = window.MTBlockEditor.apply;
+window.MTBlockEditor.apply = function(options) {
+    options.block ||= {};
+    options.block["core-column"] ||= {};
+    options.block["core-column"]["compile-timeout"] = 10000;
+    return originalApply.call(this, options);
+};
+</script>
+</mt:setvarblock>
